@@ -6,5 +6,6 @@ work on my Nexus and Yezz devices.
 
 This is running on Processing 3.3 and the Android SDK API 6.0 (23).
 
-Nearly all the code works, even if the `Significant Motion` sensor seems to be broken - or maybe my motions
-are simply insignificant ?
+
+# Issues and Workarounds
+As I worked through the book, I documented my problems and solutions (when found) on [this page](https://github.com/gratefulfrog/Car/wiki/Processing-Android-mode-and-Ketai-Library)
