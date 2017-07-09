@@ -20,8 +20,8 @@ void setup() {
   textSize(50);
   location = new KetaiLocation(this);
   target = new Location("target");
-  target.setLatitude(50.841708);
-  target.setLongitude(4.322397);
+  target.setLatitude(48.8584);
+  target.setLongitude(2.2945);
 }
 
 void draw() {
@@ -36,7 +36,7 @@ void draw() {
     "Longitude: " + longitude + "°" + "\n" +
     "Altitude: " + altitude  + " m" + "\n" +
     "Accuracy: " + accuracy  + " m" + "\n" +
-    "Distance to FabLabXL: "+ nf(distance/1000.0,0,2) + " km\n" +
+    "Distance à la Tour Eiffel: "+ nf(distance/1000.0,0,2) + " km\n" +
     "Provider: " + location.getProvider(), 20, 0, width, height);
   }
 }

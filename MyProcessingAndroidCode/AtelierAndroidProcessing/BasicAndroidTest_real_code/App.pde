@@ -4,8 +4,13 @@ class App {
   boolean rectL,
           rectR;
   
+  DebugTracer dbt = null;
+  
   // constructor takes care of setting things up
-  App(){
+  App(boolean deb){
+    if (deb){
+      dbt = new DebugTracer();
+    }
     clearRects();
     setDrawingAttributes();
   }
@@ -14,7 +19,11 @@ class App {
   void display() {
     background(gray);
     rectRL();
-  }
+    if (dbt != null){
+      dbt.showMousePressed();
+    }
+  }      
+    
   
   // set the drawing style parameters
   void setDrawingAttributes(){
@@ -36,6 +45,9 @@ class App {
   }
   // mouse pressed callback, sets flags
   public void mousePressed() {
+    if (dbt != null){
+      dbt.showPressCount();
+    }
     if (mouseX < width/2) {
       rectL = true;  // Left
     } 
@@ -45,6 +57,9 @@ class App {
   }
   // mouse released callback, clears flags
   public void mouseReleased(){
+    if (dbt != null){
+      dbt.showReleaseCount();
+    }
     clearRects();
   }
 }

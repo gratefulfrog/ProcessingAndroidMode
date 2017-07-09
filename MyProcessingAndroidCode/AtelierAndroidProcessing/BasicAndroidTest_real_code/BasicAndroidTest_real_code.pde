@@ -9,6 +9,10 @@
  ** requires understanding of Object Orientation
  */
 
+
+// turn on or off debug tracing to console
+final boolean DEBUG = true;
+
 // the only global varaible is the instance of the App class
 App app;
 
@@ -19,7 +23,7 @@ void settings(){
 }
 
 void setup() {
-  app =new App();
+  app =new App(DEBUG);
 }
 void draw() {
   app.display();
