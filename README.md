@@ -1,4 +1,6 @@
 # ProcessingAndroidMode
+Following Microsoft's purchase of Github, this project has migrated to gitlab.
+
 Tests using Processing.org's Adnroid Mode and Ketai library
 
 Lots of exercises from the book *Rapid Android Development* which have been adapted to actually 
